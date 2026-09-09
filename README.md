@@ -1,4 +1,4 @@
-# Common Ground
+# Common Ground Club
 
 A five-page student business club website: Home, About Us, Projects, Team, and Contact Us.
 
@@ -10,7 +10,7 @@ The site uses React, Vinext, and CSS with a Cloudflare-compatible production bui
 
 Contact links open the visitor’s email app with a prefilled subject; no contact submissions are stored or sent by a server. The contact page also accepts a valid project query parameter to prefill the email subject.
 
-Common Ground is a working brand name. Project descriptions and the club mission are draft editorial copy based on the owner’s supplied project names. No meeting dates, membership counts, achievements, partnerships, or chapter status are asserted. Team names, roles, graduation years, and the contact email were supplied by the owner. The architectural image is original AI-generated imagery and does not depict the school or club facilities.
+The brand is Common Ground Club, with a cg.c monogram. Project descriptions and the club mission are draft editorial copy based on the owner’s supplied project names. No meeting dates, membership counts, achievements, partnerships, or chapter status are asserted. Team names, roles, graduation years, and the contact email were supplied by the owner. The architectural image is original AI-generated imagery and does not depict the school or club facilities.
 
 ## Validation
 

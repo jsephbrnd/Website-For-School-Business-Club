@@ -32,7 +32,7 @@ export default function Home() {
           />
           <div className="photo-caption">
             <span>A DIFFERENT PERSPECTIVE</span>
-            <span aria-hidden="true">01 / CG</span>
+            <span aria-hidden="true">01 / CG.C</span>
           </div>
         </div>
       </section>
@@ -45,7 +45,7 @@ export default function Home() {
           </h2>
           <p className="body-copy">
             You don’t need a business plan to be here. Just a little curiosity.
-            Common Ground brings students together to ask better questions,
+            Common Ground Club brings students together to ask better questions,
             exchange perspectives, and turn ideas into something tangible.
           </p>
         </div>
@@ -71,7 +71,7 @@ export default function Home() {
             <span className="card-index">02 / CONNECT</span>
             <div>
               <h3>People make it happen.</h3>
-              <p>Get to know the students helping shape Common Ground.</p>
+              <p>Get to know the students helping shape Common Ground Club.</p>
             </div>
             <span className="card-link">Meet the team</span>
           </a>

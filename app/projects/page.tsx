@@ -15,7 +15,7 @@ export default function ProjectsPage() {
         </h1>
         <p className="body-copy">
           Five ways to connect with business, hear new perspectives, and get
-          involved with Common Ground.
+          involved with Common Ground Club.
         </p>
       </section>
       <section className="content-section">

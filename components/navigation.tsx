@@ -13,14 +13,14 @@ export function Navigation() {
   const pathname = usePathname();
   return (
     <header className="site-header wrap">
-      <a href="/" className="wordmark" aria-label="Common Ground home">
+      <a href="/" className="wordmark" aria-label="Common Ground Club home">
         <span className="brand-mark" aria-hidden="true">
-          cg.
+          cg.c
         </span>
         <span>
           Common
           <br />
-          Ground
+          Ground Club
         </span>
       </a>
       <nav aria-label="Main navigation">

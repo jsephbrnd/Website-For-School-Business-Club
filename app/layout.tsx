@@ -4,8 +4,8 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Common Ground — A student business club',
-    template: '%s — Common Ground',
+    default: 'Common Ground Club — A student business club',
+    template: '%s — Common Ground Club',
   },
   description:
     'A student business club for curious minds. Explore ideas, learn by doing, and build something together.',
@@ -24,12 +24,12 @@ export default function RootLayout({
         <Navigation />
         {children}
         <footer className="footer wrap">
-          <a className="wordmark" href="/" aria-label="Common Ground home">
+          <a className="wordmark" href="/" aria-label="Common Ground Club home">
             <span className="brand-mark" aria-hidden="true">
-              cg.
+              cg.c
             </span>
             <span>
-              Common Ground
+              Common Ground Club
               <span className="brand-sub">A student business club</span>
             </span>
           </a>

@@ -13,7 +13,7 @@ export default function AboutPage() {
           <span className="muted-heading">An open mind.</span>
         </h1>
         <p className="body-copy">
-          Common Ground is a student business club built around curiosity,
+          Common Ground Club is a student business club built around curiosity,
           conversation, and the willingness to try.
         </p>
       </section>

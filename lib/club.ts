@@ -1,5 +1,5 @@
 export const club = {
-  name: 'Common Ground',
+  name: 'Common Ground Club',
   email: 'Barnardj28@student.jhs.net',
   leaders: [
     {

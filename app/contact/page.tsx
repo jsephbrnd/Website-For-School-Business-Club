@@ -63,8 +63,8 @@ export default async function ContactPage({
             className="contact-email"
             href={emailLink(
               selectedProject
-                ? `Common Ground — ${selectedProject}`
-                : 'Hello, Common Ground',
+                ? `Common Ground Club — ${selectedProject}`
+                : 'Hello, Common Ground Club',
             )}
           >
             {club.email}

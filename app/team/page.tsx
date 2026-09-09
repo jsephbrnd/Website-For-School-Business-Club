@@ -14,7 +14,9 @@ export default function TeamPage() {
           <br />
           <span className="muted-heading">Individual perspectives.</span>
         </h1>
-        <p className="body-copy">Meet the students behind Common Ground.</p>
+        <p className="body-copy">
+          Meet the students behind Common Ground Club.
+        </p>
       </section>
       <section className="content-section">
         <div className="section-heading">
@@ -55,7 +57,7 @@ export default function TeamPage() {
           </h2>
           <p className="body-copy">
             Every question, conversation, and contribution helps shape Common
-            Ground. You don’t need a title to make a difference here.
+            Ground Club. You don’t need a title to make a difference here.
           </p>
         </div>
       </section>
