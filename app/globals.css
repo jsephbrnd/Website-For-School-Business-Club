@@ -973,3 +973,23 @@ h3 {
     font-size: 1.05rem;
   }
 }
+
+.portrait-panel {
+  height: 350px;
+  background: #f1f3f6;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.team-portrait {
+  width: 100%;
+  height: calc(100% - 24px);
+  object-fit: contain;
+  object-position: center bottom;
+}
+@media (max-width: 640px) {
+  .portrait-panel {
+    height: 320px;
+  }
+}

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { club } from '@/lib/club';
 export const metadata: Metadata = { title: 'Team' };
@@ -23,17 +24,15 @@ export default function TeamPage() {
         <div className="team-grid">
           {club.leaders.map((leader, index) => (
             <article className="team-card" key={leader.name}>
-              <div
-                className={`initial-panel initial-panel-${index}`}
-                aria-hidden="true"
-              >
-                <span className="initials">
-                  {leader.initials}
-                  <span className="initial-dot">.</span>
-                </span>
-                <span className="initial-panel-label">
-                  COMMON GROUND / {String(index + 1).padStart(2, '0')}
-                </span>
+              <div className="portrait-panel">
+                <Image
+                  unoptimized
+                  src={leader.portrait}
+                  alt={leader.name}
+                  width={600}
+                  height={600}
+                  className={`team-portrait portrait-${index}`}
+                />
               </div>
               <div className="team-caption">
                 <div>

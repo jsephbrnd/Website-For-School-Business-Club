@@ -5,12 +5,14 @@ export const club = {
     {
       name: 'Joseph Barnard',
       initials: 'JB',
+      portrait: '/joseph-barnard.png',
       role: 'President / Founder',
       classYear: '2028',
     },
     {
       name: 'Grayson Gilbert',
       initials: 'GG',
+      portrait: '/grayson-gilbert.png',
       role: 'Vice President',
       classYear: '2027',
     },
