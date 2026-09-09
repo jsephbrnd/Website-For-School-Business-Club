@@ -28,7 +28,12 @@ export function Navigation() {
           <a
             key={href}
             href={href}
-            aria-current={pathname === href ? 'page' : undefined}
+            aria-current={
+              pathname === href ||
+              (href === '/team' && pathname?.startsWith('/team/'))
+                ? 'page'
+                : undefined
+            }
             className={href === '/contact' ? 'nav-contact' : ''}
           >
             {label}

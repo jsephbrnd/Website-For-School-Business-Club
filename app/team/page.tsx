@@ -25,7 +25,12 @@ export default function TeamPage() {
         </div>
         <div className="team-grid">
           {club.leaders.map((leader, index) => (
-            <article className="team-card" key={leader.name}>
+            <a
+              className="team-card team-card-link"
+              key={leader.name}
+              href={`/team/${leader.slug}`}
+              aria-label={`View ${leader.name}’s profile`}
+            >
               <div className="portrait-panel">
                 <Image
                   unoptimized
@@ -40,10 +45,11 @@ export default function TeamPage() {
                 <div>
                   <h2>{leader.name}</h2>
                   <p>{leader.role}</p>
+                  <span className="profile-label">View profile</span>
                 </div>
                 <span className="class-year">Class of {leader.classYear}</span>
               </div>
-            </article>
+            </a>
           ))}
         </div>
       </section>

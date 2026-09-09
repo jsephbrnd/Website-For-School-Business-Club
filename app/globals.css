@@ -1013,3 +1013,87 @@ h3 {
     height: 44px;
   }
 }
+
+.team-card-link {
+  display: block;
+}
+.team-card-link .portrait-panel {
+  transition: background 0.2s;
+}
+.team-card-link:hover .portrait-panel {
+  background: #e7ecf7;
+}
+.team-card-link:hover h2 {
+  color: var(--primary);
+}
+.profile-label {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.875rem;
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.member-page {
+  padding-block: 40px 90px;
+}
+.member-back {
+  margin-bottom: 42px;
+}
+.member-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+.member-portrait {
+  height: 490px;
+}
+.member-copy h1 {
+  font-size: clamp(2.75rem, 5vw, 5rem);
+  letter-spacing: -0.065em;
+  margin-block: 22px;
+}
+.member-role {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+.member-year,
+.bio-note {
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+}
+.member-bio {
+  margin-top: 38px;
+  padding-top: 30px;
+  border-top: 1px solid var(--border);
+}
+.member-bio h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+.member-bio .body-copy {
+  margin-bottom: 18px;
+}
+@media (max-width: 800px) {
+  .member-layout {
+    gap: 32px;
+  }
+  .member-portrait {
+    height: 380px;
+  }
+}
+@media (max-width: 640px) {
+  .member-layout {
+    grid-template-columns: 1fr;
+  }
+  .member-portrait {
+    height: 340px;
+  }
+  .member-page {
+    padding-block: 25px 60px;
+  }
+  .member-back {
+    margin-bottom: 30px;
+  }
+}

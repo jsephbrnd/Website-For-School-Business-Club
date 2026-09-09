@@ -4,6 +4,8 @@ export const club = {
   leaders: [
     {
       name: 'Joseph Barnard',
+      slug: 'joseph-barnard',
+      bio: 'Joseph is the founder and president of Common Ground Club, a place for students to explore business and share ideas.',
       initials: 'JB',
       portrait: '/joseph-barnard.png',
       role: 'President / Founder',
@@ -11,6 +13,8 @@ export const club = {
     },
     {
       name: 'Grayson Gilbert',
+      slug: 'grayson-gilbert',
+      bio: 'Grayson is the vice president of Common Ground Club and part of its student leadership team.',
       initials: 'GG',
       portrait: '/grayson-gilbert.png',
       role: 'Vice President',
