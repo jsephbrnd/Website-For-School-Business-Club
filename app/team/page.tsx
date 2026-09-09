@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
 import { club } from '@/lib/club';
 export const metadata: Metadata = { title: 'Team' };
@@ -59,18 +58,7 @@ export default function TeamPage() {
             Every question, conversation, and contribution helps shape Common
             Ground. You don’t need a title to make a difference here.
           </p>
-          <Link className="text-link" href="/contact">
-            Find out how to join <span aria-hidden="true">↗</span>
-          </Link>
         </div>
-      </section>
-      <section className="closing">
-        <span className="eyebrow">
-          COME WITH A QUESTION. LEAVE WITH AN IDEA.
-        </span>
-        <Link href="/contact">
-          Find your people.<span aria-hidden="true">↗</span>
-        </Link>
       </section>
     </main>
   );

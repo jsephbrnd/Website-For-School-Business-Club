@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
 import { club } from '@/lib/club';
 export const metadata: Metadata = { title: 'Projects' };
@@ -34,37 +33,10 @@ export default function ProjectsPage() {
               </div>
               <div>
                 <p>{project.description}</p>
-                <Link
-                  className="text-link"
-                  href={`/contact?project=${encodeURIComponent(project.name)}`}
-                >
-                  Ask about this project <span aria-hidden="true">↗</span>
-                </Link>
               </div>
             </article>
           ))}
         </div>
-      </section>
-      <section className="quiet-panel">
-        <p className="eyebrow">STAY IN THE LOOP</p>
-        <h2 className="panel-title">
-          The next conversation
-          <br />
-          could be your starting point.
-        </h2>
-        <p className="body-copy">
-          Contact the club for meeting times, guest speaker details, and ways to
-          take part.
-        </p>
-        <Link className="button" href="/contact">
-          Get in touch <span aria-hidden="true">↗</span>
-        </Link>
-      </section>
-      <section className="closing">
-        <span className="eyebrow">HAVE SOMETHING IN MIND?</span>
-        <Link href="/contact">
-          Bring us your idea.<span aria-hidden="true">↗</span>
-        </Link>
       </section>
     </main>
   );

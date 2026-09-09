@@ -68,31 +68,12 @@ export default async function ContactPage({
             )}
           >
             {club.email}
-            <span aria-hidden="true">↗</span>
           </a>
           {selectedProject && (
             <p className="project-inquiry">Your topic: {selectedProject}</p>
           )}
-          <a
-            className="button"
-            href={emailLink(
-              selectedProject
-                ? `Common Ground — ${selectedProject}`
-                : 'Hello, Common Ground',
-            )}
-          >
-            Write us an email <span aria-hidden="true">↗</span>
-          </a>
           <span className="email-note">Opens in your email app.</span>
         </div>
-      </section>
-      <section className="contact-end">
-        <p className="eyebrow">COMMON GROUND</p>
-        <p>
-          Different perspectives.
-          <br />
-          <span className="muted-heading">One place to start.</span>
-        </p>
       </section>
     </main>
   );

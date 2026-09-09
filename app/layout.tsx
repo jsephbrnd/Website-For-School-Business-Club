@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Navigation } from '@/components/navigation';
 import './globals.css';
@@ -25,7 +24,7 @@ export default function RootLayout({
         <Navigation />
         {children}
         <footer className="footer wrap">
-          <Link className="wordmark" href="/" aria-label="Common Ground home">
+          <a className="wordmark" href="/" aria-label="Common Ground home">
             <span className="brand-mark" aria-hidden="true">
               cg.
             </span>
@@ -33,11 +32,8 @@ export default function RootLayout({
               Common Ground
               <span className="brand-sub">A student business club</span>
             </span>
-          </Link>
+          </a>
           <p>Different perspectives. Shared ambition.</p>
-          <Link className="text-link" href="/contact">
-            Let’s connect <span aria-hidden="true">↗</span>
-          </Link>
         </footer>
       </body>
     </html>

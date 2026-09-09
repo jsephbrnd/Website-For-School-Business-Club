@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
 export const metadata: Metadata = { title: 'About Us' };
 export default function AboutPage() {
@@ -37,9 +36,9 @@ export default function AboutPage() {
             want to understand how business works, there’s a place for your
             perspective.
           </p>
-          <Link className="text-link" href="/projects">
-            Explore our projects <span aria-hidden="true">↗</span>
-          </Link>
+          <a className="text-link" href="/projects">
+            Explore our projects
+          </a>
         </div>
       </section>
       <section className="content-section values-section">
@@ -70,12 +69,6 @@ export default function AboutPage() {
             </p>
           </article>
         </div>
-      </section>
-      <section className="closing">
-        <span className="eyebrow">THE PEOPLE BEHIND THE CLUB</span>
-        <Link href="/team">
-          Meet your team.<span aria-hidden="true">↗</span>
-        </Link>
       </section>
     </main>
   );

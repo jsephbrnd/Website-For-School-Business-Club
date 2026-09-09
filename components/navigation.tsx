@@ -1,5 +1,4 @@
 'use client';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export const navigation = [
@@ -14,7 +13,7 @@ export function Navigation() {
   const pathname = usePathname();
   return (
     <header className="site-header wrap">
-      <Link href="/" className="wordmark" aria-label="Common Ground home">
+      <a href="/" className="wordmark" aria-label="Common Ground home">
         <span className="brand-mark" aria-hidden="true">
           cg.
         </span>
@@ -23,18 +22,17 @@ export function Navigation() {
           <br />
           Ground
         </span>
-      </Link>
+      </a>
       <nav aria-label="Main navigation">
         {navigation.map(([href, label]) => (
-          <Link
+          <a
             key={href}
             href={href}
             aria-current={pathname === href ? 'page' : undefined}
             className={href === '/contact' ? 'nav-contact' : ''}
           >
             {label}
-            {href === '/contact' && <span aria-hidden="true">↗</span>}
-          </Link>
+          </a>
         ))}
       </nav>
     </header>
