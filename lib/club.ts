@@ -47,7 +47,7 @@ export const club = {
         'Our Business Professionals of America initiative. Contact the club to learn about participation and next steps.',
     },
     {
-      name: 'Entrepreneur Club Org',
+      name: 'entrepreneurclub.org',
       category: 'Exploring entrepreneurship',
       description:
         'An initiative for students interested in entrepreneurship. Contact the club to learn more and get involved.',
