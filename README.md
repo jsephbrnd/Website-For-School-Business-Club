@@ -19,3 +19,7 @@ Run `pnpm exec tsc --noEmit`, `pnpm lint`, and `pnpm build`. The initial deliver
 Lint targets the authored site code; unmodified generated UI components and hooks are retained but are not used by this presentation site.
 
 Navigation uses standard HTML anchors because Vinext client transitions failed in the hosted production build. This keeps all navigation usable even when JavaScript fails; the Next.js link preference lint rule is disabled intentionally.
+
+## Vercel deployment
+
+Vercel uses the Next.js framework and `pnpm run build:vercel`, configured in `vercel.json`. Next.js emits `.next` with all pages and both member profiles. `postcss.config.mjs` compiles the shared Tailwind styles. `tsconfig.vercel.json` keeps Next.js types separate from Vinext's compatibility types. The default `pnpm build` remains the Cloudflare/Sites build.
