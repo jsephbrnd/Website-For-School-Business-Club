@@ -1097,3 +1097,13 @@ h3 {
     margin-bottom: 30px;
   }
 }
+
+.club-contact-form { max-width: 760px; display: grid; gap: 24px; margin-bottom: 48px; }
+.club-contact-form label { display: grid; gap: 10px; font-size: 15px; font-weight: 500; }
+.contact-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.club-contact-form input, .club-contact-form select, .club-contact-form textarea { width: 100%; min-width: 0; padding: 16px; border: 1px solid #d9dce2; border-radius: 8px; background: #fafafa; color: #202124; font: inherit; }
+.club-contact-form textarea { resize: vertical; }
+.club-contact-form :is(input, select, textarea, button):focus-visible { outline: 2px solid #234fe5; outline-offset: 3px; }
+.club-contact-form button { justify-self: start; border: 0; border-radius: 8px; padding: 16px 28px; background: #234fe5; color: white; font: inherit; cursor: pointer; }
+.club-contact-form button:hover { background: #193dcc; }
+@media (max-width: 600px) { .contact-fields { grid-template-columns: 1fr; } }
