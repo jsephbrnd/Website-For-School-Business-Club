@@ -47,7 +47,7 @@ export default function RootLayout({
               <span className="brand-sub">A student business club</span>
             </span>
           </a>
-          <p>Different perspectives. Shared ambition.</p>
+          <p>© {new Date().getFullYear()} Common Ground Club. All rights reserved.</p>
         </footer>
       </body>
     </html>
