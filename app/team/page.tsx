@@ -32,7 +32,10 @@ export default function TeamPage() {
               aria-label={`View ${leader.name}’s profile`}
             >
               <div className="portrait-panel">
-                <Image
+                {leader.slug === 'joseph-barnard' ? (
+                  <video className="team-portrait team-video" src="/joseph-barnard.mp4" poster={leader.portrait} autoPlay muted loop playsInline preload="metadata" aria-label="Joseph Barnard" controls />
+                ) : (
+                  <Image
                   unoptimized
                   src={leader.portrait}
                   alt={leader.name}
@@ -40,6 +43,7 @@ export default function TeamPage() {
                   height={600}
                   className={`team-portrait portrait-${index}`}
                 />
+                )}
               </div>
               <div className="team-caption">
                 <div>

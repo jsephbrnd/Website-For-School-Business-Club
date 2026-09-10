@@ -23,7 +23,10 @@ export default async function MemberPage({ params }: Props) {
       </a>
       <section className="member-layout">
         <div className="portrait-panel member-portrait">
-          <Image
+          {member.slug === 'joseph-barnard' ? (
+                  <video className="team-portrait team-video" src="/joseph-barnard.mp4" poster={member.portrait} autoPlay muted loop playsInline preload="metadata" aria-label="Joseph Barnard" controls />
+                ) : (
+                  <Image
             unoptimized
             src={member.portrait}
             alt={member.name}
@@ -31,6 +34,7 @@ export default async function MemberPage({ params }: Props) {
             height={600}
             className="team-portrait"
           />
+                )}
         </div>
         <div className="member-copy">
           <p className="eyebrow">CLUB LEADERSHIP</p>
