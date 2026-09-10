@@ -47,7 +47,10 @@ export default function RootLayout({
               <span className="brand-sub">A student business club</span>
             </span>
           </a>
-          <p>© {new Date().getFullYear()} Common Ground Club. All rights reserved.</p>
+          <div className="footer-notices">
+            <p>© {new Date().getFullYear()} Common Ground Club. All rights reserved.</p>
+            <p>Not affiliated with Jesuit High School Sacramento.</p>
+          </div>
         </footer>
       </body>
     </html>
