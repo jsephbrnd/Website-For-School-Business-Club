@@ -3,6 +3,20 @@ import { Navigation } from '@/components/navigation';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://commongroundclub.org'),
+  openGraph: {
+    type: 'website',
+    siteName: 'Common Ground Club',
+    title: 'Common Ground Club',
+    description: 'Different perspectives. Shared ambition. A student business club for curious minds.',
+    images: [{ url: '/share-logo.png', width: 1024, height: 1024, alt: 'Common Ground Club logo' }],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Common Ground Club',
+    description: 'Different perspectives. Shared ambition. A student business club for curious minds.',
+    images: ['/share-logo.png'],
+  },
   title: {
     default: 'Common Ground Club — A student business club',
     template: '%s — Common Ground Club',
