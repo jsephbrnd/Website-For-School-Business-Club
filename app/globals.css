@@ -1112,3 +1112,6 @@ h3 {
 
 .footer-notices { display: grid; gap: 6px; }
 .footer-notices p { margin: 0; }
+
+.meeting-empty { padding: clamp(28px, 5vw, 56px); background: #f1f3f6; margin-bottom: 64px; border-radius: 12px; }
+.meeting-empty h3 { font-size: clamp(22px, 3vw, 30px); font-weight: 500; margin: 18px 0 12px; }

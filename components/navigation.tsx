@@ -6,6 +6,7 @@ export const navigation = [
   ['/about', 'About Us'],
   ['/projects', 'Projects'],
   ['/team', 'Team'],
+  ['/meeting-history', 'Meeting History'],
   ['/contact', 'Contact Us'],
 ] as const;
 
