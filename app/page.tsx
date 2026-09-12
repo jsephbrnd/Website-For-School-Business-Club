@@ -1,82 +1,14 @@
 import Image from 'next/image';
 export default function Home() {
-  return (
-    <main id="main">
-      <section className="hero wrap">
-        <div className="eyebrow">
-          <span className="blue-dot" /> CURIOUS MINDS. REAL POSSIBILITIES.
-        </div>
-        <h1>
-          Good ideas.
-          <br />
-          <span className="muted-heading">Great company.</span>
-        </h1>
-        <div className="hero-bottom">
-          <p>
-            A place for students to explore business,
-            <br className="desktop-break" /> challenge ideas, and build what
-            comes next.
-          </p>
-          <a className="button" href="/about">
-            Discover the club
-          </a>
-        </div>
-        <div className="hero-photo">
-          <Image
-            unoptimized
-            src="/architecture.webp"
-            alt="Sunlight and shadow across a sculptural concrete staircase rising into a blue sky"
-            width="1536"
-            height="1024"
-            fetchPriority="high"
-          />
-          <div className="photo-caption">
-            <span>A DIFFERENT PERSPECTIVE</span>
-            <span aria-hidden="true">01 / CG.C</span>
-          </div>
-        </div>
-      </section>
-      <section className="intro wrap section-space">
-        <p className="eyebrow">THE IDEA BEHIND THE CLUB</p>
-        <div>
-          <h2>
-            Ambition starts with
-            <br />a conversation.
-          </h2>
-          <p className="body-copy">
-            You don’t need a business plan to be here. Just a little curiosity.
-            Common Ground Club brings students together to ask better questions,
-            exchange perspectives, and turn ideas into something tangible.
-          </p>
-        </div>
-      </section>
-      <section className="explore wrap">
-        <div className="section-heading">
-          <h2>Find your starting point.</h2>
-          <span className="eyebrow">LEARN. MAKE. CONNECT.</span>
-        </div>
-        <div className="explore-grid">
-          <a className="explore-card" href="/projects">
-            <span className="card-index">01 / EXPLORE</span>
-            <div>
-              <h3>Ideas into action.</h3>
-              <p>
-                Discover what we’re thinking about and where our projects could
-                take us.
-              </p>
-            </div>
-            <span className="card-link">Our projects</span>
-          </a>
-          <a className="explore-card" href="/team">
-            <span className="card-index">02 / CONNECT</span>
-            <div>
-              <h3>People make it happen.</h3>
-              <p>Get to know the students helping shape Common Ground Club.</p>
-            </div>
-            <span className="card-link">Meet the team</span>
-          </a>
-        </div>
-      </section>
-    </main>
-  );
+  return <main id="main" className="wrap home-page">
+    <section className="home-window">
+      <div className="window-bar">COMMON GROUND CLUB <span aria-hidden="true">▣ ▣ ▣</span></div>
+      <div className="space-hero">
+        <div className="hero-copy"><h1>Big ideas.<br />Beyond orbit.</h1><p>A student business club for curious minds. Meet people, explore business, and build something together.</p><a className="button" href="/projects">Explore our projects</a><a className="button secondary" href="/team">Meet the crew</a></div>
+        <div className="space-scene"><Image src="/pixel-space.svg" alt="Pixel-art astronaut with a briefcase exploring a moon beneath a ringed planet" width={640} height={560} priority unoptimized /></div>
+      </div>
+    </section>
+    <section className="mission-strip"><h2>Your next mission?</h2><p>Guest speakers, new ideas, and room to try something new.</p><a className="button" href="/about">About the club</a></section>
+    <section className="home-log"><div><p className="eyebrow">THE FLIGHT LOG</p><h2>Missed a meeting?</h2><p>Find club recaps and notes in our meeting history.</p></div><a className="button secondary" href="/meeting-history">Open meeting history</a></section>
+  </main>;
 }

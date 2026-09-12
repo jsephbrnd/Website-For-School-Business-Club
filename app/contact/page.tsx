@@ -11,7 +11,7 @@ export default function ContactPage() {
       <section className="content-section">
         <form className="club-contact-form" action="https://formsubmit.co/barnardj28@student.jhs.net" method="POST">
           <input type="hidden" name="_subject" value="Common Ground Club — new message" />
-          <input type="hidden" name="_next" value="https://commongroundclub.vercel.app/contact/thanks" />
+          <input type="hidden" name="_next" value="https://commongroundclub.org/contact/thanks" />
           <input type="hidden" name="_template" value="table" />
           <div className="contact-fields">
             <label>Name<input name="name" autoComplete="name" required maxLength={100} placeholder="Your name" /></label>
