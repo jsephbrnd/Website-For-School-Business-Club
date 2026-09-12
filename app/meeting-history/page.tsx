@@ -17,11 +17,18 @@ export default function MeetingHistoryPage() {
           <h2 id="past-meetings">Past meetings</h2>
           <span className="eyebrow">THE CLUB ARCHIVE</span>
         </div>
-        <div className="meeting-empty">
-          <span className="eyebrow">NOTHING POSTED YET</span>
-          <h3>Meeting recaps will appear here.</h3>
-          <p className="body-copy">Check back for meeting dates, highlights, and what comes next.</p>
-        </div>
+        <article className="meeting-entry quiet-panel">
+          <div className="section-heading">
+            <time className="eyebrow" dateTime="2026-09-11">SEPTEMBER 11, 2026</time>
+            <span className="eyebrow">55 ATTENDEES</span>
+          </div>
+          <h3>First meeting</h3>
+          <p className="body-copy">
+            We kicked off Common Ground Club with 55 people in attendance.
+            Members met the club leadership, got an introduction to our projects,
+            and learned about upcoming opportunities to get involved.
+          </p>
+        </article>
       </section>
     </main>
   );
